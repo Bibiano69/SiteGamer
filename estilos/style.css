@@ -16,6 +16,7 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
 }
 header{
     background-color: var(--cor1);
@@ -37,13 +38,93 @@ header li.item{
     background-color: rgba(255, 255, 255, 0); /* Ajusta a opacidade e a cor */
     border-radius: 10px 10px 0 0;
 }
+header li.item:hover{
+    border: 1px solid white;
+    background-color: var(--cor3);
+    cursor: pointer;
+}
 header ul li {
     display: inline-block;
     padding: 20px;
 }
 main{
-    background-color: salmon;
+    background-image: linear-gradient(to bottom,var(--cor1), var(--cor3));
 }
-div#imagem img{
-    width: 100px;
+nav{
+    background-color: transparent;
+    text-align: center;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.39);
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 10px;
+    background-color: var(--cor3);
+    padding: 10px;
+    font-size: 0.8em;
+    border-radius: 10px;
+}
+nav ul li:hover{
+    background-color: white;
+    color: var(--cor3);
+    cursor: pointer;
+}
+div#container{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 100vh;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+div#imagem{
+    background-image: url(../Imagens/2613900-amd-ryzen-9000-desktop-og.png);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+}
+section.filho{
+    background-color: aqua;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 10px 10px 0px 0px;
+}
+section.filho p{
+    font-weight: bolder;
+    font-size: 1.2em;
+    background-color: white;
+    color: #BF3BF5;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+}
+section.filho p:hover{
+    background-color: var(--cor6);
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
+}
+div#imagem:hover + p {
+    background-color: var(--cor6);
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
+}
+section.filho span{
+    color: lightslategray;
+    font-size: small;
+}
+footer{
+    color: white;
+    text-align: center;
+    background-color: var(--cor3);
 }
