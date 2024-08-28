@@ -1,0 +1,107 @@
+@charset "UTF-8";
+:root{
+    --cor1: #413bf573;
+    --cor2: #823BF5;
+    --cor3: #c03bf5d5;
+    --cor4: #3b6af5af;
+    --cor5: #f53be9;
+    --cor6: #C4A6F5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: var(--cor2);
+}
+section{
+   background-color: salmon;
+   height: 330px;
+   width: 400px;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.664);
+   background-color: #ac8ae4;
+}
+section h1{
+    text-align: center;
+    font-size: 30px;
+    color: var(--cor2)
+}
+section form{
+    text-align: center;
+}
+div.campo_email, div.campo_senha{
+    padding: 10px;
+    font-size: 1.1em;
+    text-align: left;
+}
+.campo_email label, .campo_senha label{
+    text-align: left;
+    margin-bottom: 10px;
+    display: block;
+}
+input#iemail, input#isenha{
+    font-size: 20px;
+    height: 35px;
+    width: 100%;
+    border-radius: 10px;
+    border: 0px;
+    outline: none;
+    padding-left: 15px;
+    background-color: #d6befc ;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.342);
+}
+p span a{
+    text-decoration: none;
+    color: var(--cor2);
+    font-weight: bolder;
+}
+p span a:hover{
+    text-decoration: underline;
+    color: white;
+}
+div.home{
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+div.home a{
+    text-decoration: none;
+    color: black;
+}
+div.home a:hover{
+    color: white;
+}
+input[type="submit"]{
+    font-size: 20px;
+    height: 40px;
+    width: 300px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--cor1);
+    font-weight: bolder;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.342);
+}
+input[type="submit"]:hover{
+    background-color: white;
+}
+input::placeholder{
+    font-size: 0.8em;
+}
