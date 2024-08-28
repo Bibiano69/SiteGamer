@@ -89,7 +89,7 @@ div#container{
     flex-wrap: wrap;
 }
 div#imagem{
-    background-image: url(../Imagens/processador.png);
+    background-image: url(../Imagens/placadevideo.jpg);
     background-size: cover;
     background-position: center center;
     width: 100%;

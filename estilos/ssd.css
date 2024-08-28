@@ -89,8 +89,9 @@ div#container{
     flex-wrap: wrap;
 }
 div#imagem{
-    background-image: url(../Imagens/processador.png);
+    background-image: url(../Imagens/ssdcolorido.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
     height: 100px;
@@ -99,7 +100,7 @@ div#imagem{
     cursor: pointer;
 }
 section.filho{
-    background-color: aqua;
+    background-color: white;
     height: 100px;
     margin-top: 20px;
     border-radius: 10px 10px 0px 0px;
