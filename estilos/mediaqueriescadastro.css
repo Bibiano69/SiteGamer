@@ -16,14 +16,14 @@ Grandes telas: 1200px e acima */
     }
     section{
         width: 500px;
-        height: 450px;
+        height: 700px;
     }
     input[type="submit"]{
         width: 400px;
         height: 60px;
         margin-top: 40px;
     }
-    input#iemail, input#isenha{
+    input#iemail, input#isenha , input#inome{
         height: 50px;
     }
     label{

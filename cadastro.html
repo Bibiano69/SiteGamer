@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Cadastro</title>
     <link rel="shortcut icon" href="Imagens/Martz90-Hex-Game-minecraft.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilos/login.css">
-    <link rel="stylesheet" href="estilos/mediaquerieslogin.css">
+    <link rel="stylesheet" href="estilos/cadastro.css">
+    <link rel="stylesheet" href="estilos/mediaqueriescadastro.css">
 </head>
 <body>
     <main>
         <section>
-            <h1>LOGIN</h1>
+            <h1>CADASTRE-SE</h1>
             <form method="post" action="">
+                <div class="campo_nome">
+                    <label for="inome">Nome</label>
+                    <input placeholder="Nome completo" required type="text" name="nome" id="inome">
+                </div>
                 <div class="campo_email">
                     <label for="iemail">Email</label>
                     <input required placeholder="Seu e-mail" type="email" name="email" id="iemail">
@@ -21,7 +25,11 @@
                     <label for="isenha">Senha</label>
                     <input required minlength="8" placeholder="Sua senha" type="password" name="senha" id="isenha">
                 </div>
-                <p>Não possui conta? <span><a href="cadastro.html">Cadastre-se</a></span></p>
+                <div class="campo_senha">
+                    <label for="isenha">Confirme sua senha</label>
+                    <input required minlength="8" placeholder="Digite sua senha novamente" type="password" name="senha" id="isenha">
+                </div>
+                <p>Já possui conta? <span><a href="login.html">Faça login</a></span></p>
                 <div class="home"><a href="index.html">Home</a></div>
                 <div>
                     <input type="submit" value="Entrar">
