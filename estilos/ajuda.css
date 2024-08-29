@@ -150,6 +150,9 @@ Grandes telas: 1200px e acima */
     header{
         background-image: linear-gradient(to right, #413bf5, #C4A6F5);
     }
+    header p{
+        font-weight: bold;
+    }
     header a{
         font-size: 1.3em;
     }
@@ -171,12 +174,21 @@ Grandes telas: 1200px e acima */
     
 }
 @media screen and (min-width: 1200px) {
+    header h1{
+        font-size: 2.5em;
+    }
+    header p{
+        font-weight: bolder;
+    }
     header a{
         font-size: 1.3em;
     }
     header a:hover{
         background-color: var(--cor3);
         border-radius: 10px 10px 0px 0px;
+    }
+    article.perguntas , article.problemas{
+        font-size: 1.3em;
     }
     section{
         width: 700px;
