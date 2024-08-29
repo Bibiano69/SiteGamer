@@ -88,6 +88,9 @@ section{
     height: 100%;
     max-width: 850px;
 }
+ul, li , ol {
+    list-style: none;
+}
 section h2{
     margin-bottom: 10px;
     font-size: 1.7em;
@@ -169,9 +172,7 @@ Grandes telas: 1200px e acima */
     section{
         margin-bottom: 20px;
         border-radius: 10px;
-    }
-        
-    
+    }  
 }
 @media screen and (min-width: 1200px) {
     header h1{
