@@ -10,10 +10,10 @@ Grandes telas: 1200px e acima */
 
 @media screen and (max-width: 600px) {
     menu ul li.item{
-        font-size: 0.3em;
+        font-size: 0.8em;
     }
     nav ul li{
-        font-size: 0.4em;
+        font-size: 0.8em;
     }
 }
 @media screen and (min-width: 768px) {

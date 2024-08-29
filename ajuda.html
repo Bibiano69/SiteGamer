@@ -12,6 +12,7 @@
         <header>
             <h1>Central de Ajuda</h1>
             <p>Esta é uma página focada em ajudar usuários, aqui iremos responder perguntas e solucionar problemas frequentes que ocorrem em nosso site.</p>
+            <a href="index.html">Home</a>
         </header>
         <article class="perguntas">
             <h2>Perguntas frequentes</h2>
@@ -48,14 +49,14 @@
             <form method="post" action="">
                 <div class="campo">
                     <label for="inome">Nome</label>
-                    <input placeholder="Nome completo" type="text" name="nome" id="inome">
+                    <input required placeholder="Nome completo" type="text" name="nome" id="inome">
                     <br>
                     <label for="iemail">Email</label>
-                    <input placeholder="Seu e-mail" type="email" name="email" id="iemail">
+                    <input required placeholder="Seu e-mail" type="email" name="email" id="iemail">
                 </div>
                 <div class="mensagem">
                     <label for="imensagem">FeedBack</label>
-                    <textarea name="mensagem" id="imensagem"></textarea>
+                    <textarea minlength="10" required name="mensagem" id="imensagem"></textarea>
                 </div>
                 <input type="submit" value="Enviar">
             </form>
