@@ -15,18 +15,20 @@
 }
 body,html{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
+    background-color: transparent;
 }
 header{
     background-image: linear-gradient(to right, var(--cor1), var(--cor2));
     border-radius: 0px 0px 10px 10px;
     padding: 10px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.521);
+    width: 100%;
 }
 header a{
     text-decoration: none;
     font-weight: bolder;
     padding: 10px;
+    color: black;
 }
 header a:hover{
     background-image: linear-gradient(to right, var(--cor1), var(--cor2));
@@ -48,9 +50,10 @@ article.perguntas{
     background-color: var(--cor6);
     border-radius: 10px;
     padding: 10px;
-    margin-top: 50px;
+    margin-top: 100px;
     text-align: justify;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.616);
+    max-width: 850px;
 }
 article.perguntas h2{
     font-size: 1.4em;
@@ -66,9 +69,10 @@ article.problemas{
     background-color: var(--cor6);
     border-radius: 10px;
     padding: 10px;
-    margin-top: 50px;
+    margin-top: 100px;
     text-align: justify;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.616);
+    max-width: 850px;
 }
 article.problemas h2{
     font-size: 1.4em;
@@ -79,9 +83,10 @@ section{
     text-align: center;
     background-image: linear-gradient(var(--cor4), var(--cor6));
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 100px;
     border-radius: 10px 10px 0px 0px;
     height: 100%;
+    max-width: 850px;
 }
 section h2{
     margin-bottom: 10px;
@@ -124,4 +129,86 @@ input[type="submit"]{
 input[type="submit"]:hover{
     background-image: linear-gradient(to right, var(--cor4),var(--cor6));
     border: 1px solid black;
+    cursor: pointer;
 }
+
+/*Typical Device Breakpoints *
+
+Pequenas telas: 600px e abaixo. (faz no first mobile)
+Celular: 600px acima  (faz no first mobile)
+Tablet: 768px e acima
+Desktop: 992px e acima
+Grandes telas: 1200px e acima */
+
+@media screen and (min-width: 768px) {
+    body{
+        background-image: url(../Imagens/tela_fundo_login.jpg) ;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+    header{
+        background-image: linear-gradient(to right, #413bf5, #C4A6F5);
+    }
+    header a{
+        font-size: 1.3em;
+    }
+    header a:hover{
+        background-color: var(--cor3);
+        border-radius: 10px 10px 0px 0px;
+    }
+    main{
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section{
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+        
+    
+}
+@media screen and (min-width: 1200px) {
+    header a{
+        font-size: 1.3em;
+    }
+    header a:hover{
+        background-color: var(--cor3);
+        border-radius: 10px 10px 0px 0px;
+    }
+    section{
+        width: 700px;
+    }
+    section h2{
+        font-size: 2.4em;
+    }
+    section p {
+        font-size: 1.2em;
+    }
+    input#inome , input#iemail{
+        height: 50px;
+        font-size: 1.2em;
+    }
+    div.campo label{
+        font-size: 1.4em;
+    }
+    div.mensagem{
+      
+    }
+    div.mensagem label{
+        font-size: 1.7em;
+    }
+ 
+    div.mensagem textarea{
+        font-size: 15px;
+        width: 500px;
+        height: 100px;
+    }
+    input[type="submit"]{
+        width: 250px;
+        height: 60px;
+        font-size: 20px;
+    }
+ }
