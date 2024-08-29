@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #413bf573;
+    --cor2: #823BF5;
+    --cor3: #c03bf5d5;
+    --cor4: #3b6af5af;
+    --cor5: #f53be9;
+    --cor6: #C4A6F5; 
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body,html{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+header{
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2));
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.521);
+}
+header h1{
+    text-align: center;
+}
+header > p{
+    text-align: center;
+    margin-top: 15px;
+}
+main{
+    background-color: rgb(224, 205, 224);
+}
+article.perguntas{
+    text-indent: 10px;
+    background-color: var(--cor6);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 50px;
+    text-align: justify;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.616);
+}
+article.perguntas h2{
+    font-size: 1.4em;
+    margin-top: 20px;
+    text-indent: 10px;
+}
+.pergunta_titulo{
+    font-weight: bold;
+    color: #632cbd;
+}
+article.problemas{
+    text-indent: 10px;
+    background-color: var(--cor6);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 50px;
+    text-align: justify;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.616);
+}
+article.problemas h2{
+    font-size: 1.4em;
+    margin-top: 20px;
+    text-indent: 10px;
+}
+section{
+    text-align: center;
+    background-image: linear-gradient(var(--cor4), var(--cor6));
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+section h2{
+    margin-bottom: 10px;
+    font-size: 1.7em;
+}
+input#inome , input#iemail{
+    width: 100%;
+    height: 40px;
+    padding-left: 15px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+div.mensagem{
+    margin-top: 20px;
+}
+textarea{
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 10px;
+}
+label{
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+div.mensagem label {
+    text-align: center;
+    font-size: 1.3em;
+}
+input[type="submit"]{
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 0px;
+}
+input[type="submit"]:hover{
+    background-image: linear-gradient(to right, var(--cor4),var(--cor6));
+    border: 1px solid black;
+}
