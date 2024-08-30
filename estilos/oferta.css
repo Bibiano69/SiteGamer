@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+
+:root{
+    --cor1: #FF5001;
+    --cor2: #ff8000;
+    --cor3: #ffe100;
+    --cor4: #060606;
+    --cor5: #0D0D0D;
+    --cor6: #6A6A6A;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+header{
+    background-color: var(--cor1);
+    font-weight: bolder;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 300px;
+    background-image: url(../Imagens/ofertafundo.jpg);
+    background-size: cover;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+header li.item {
+    margin-right: 10px;
+    color: white;
+    font-size: 0.9em;
+    backdrop-filter: blur(10px); /* Aplica o efeito de blur */
+    background-color: rgba(255, 255, 255, 0); /* Ajusta a opacidade e a cor */
+    border-radius: 10px 10px 0 0;
+    border: 2px solid var(--cor1);
+}
+header li.item:hover{
+    background-color: var(--cor4);
+    cursor: pointer;
+}
+header ul li {
+    display: inline-block;
+    padding: 20px;
+}
+main{
+    background-image: linear-gradient(to bottom,var(--cor1), var(--cor3));
+    height: 1000px;
+}
+nav{
+    background-image: linear-gradient(to right,var(--cor2), var(--cor3));
+    text-align: center;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    color: white;
+    border-radius: 0px 0px 10px 10px;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 10px;
+    background-color: var(--cor4);
+    padding: 10px;
+    font-size: 1.5em;
+    border-radius: 10px;
+    width: 150px;
+    height: 45px;
+}
+nav ul li:hover{
+    background-color: white;
+    color: var(--cor2);
+    cursor: pointer;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    color: var(--cor3);
+}
+div#container{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 100vh;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 100px;
+}
+div#oferta1{
+    background-image: url(../Imagens/oferta1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 140px;
+    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+}
+div#oferta2{
+    background-image: url(../Imagens/oferta2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 140px;
+    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+}
+div#oferta3{
+    background-image: url(../Imagens/oferta3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 140px;
+    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+}
+section.filho{
+    background-color: aqua;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+section.filho p{
+    font-weight: bolder;
+    font-size: 1.3em;
+    background-color: white;
+    color: var(--cor1);
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+    height: 90px;
+}
+section.filho p:hover{
+    background-color: var(--cor6);
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
+}
+div#imagem:hover + p {
+    background-color: var(--cor6);
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
+}
+section.filho span{
+    color: lightslategray;
+    font-size: small;
+}
+section.filho span.destaque{
+    color: var(--cor1);
+    font-size: 1.2em;
+}
+footer{
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background-color: var(--cor4);
+}
+
+/*Typical Device Breakpoints *
+
+Pequenas telas: 600px e abaixo. (faz no first mobile)
+Celular: 600px acima  (faz no first mobile)
+Tablet: 768px e acima
+Desktop: 992px e acima
+Grandes telas: 1200px e acima */
+
+@media screen and (min-width: 768px) {
+    main{
+        height: 1000px;
+    }
+    div#container{
+        align-items: center;
+        flex-direction: column;
+    }
+    section.filho{
+        flex-grow: 0;
+        width: 500px;
+        height: 150px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    main{
+        height: 1050px;
+    }
+    div#container{
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+    section.filho{
+        flex-grow: 0;
+        width: 700px;
+        height: 500px;
+    }
+    section.filho p{
+        height: 40%;
+        font-size: 1.4em;
+    }
+    div#oferta1, div#oferta2, div#oferta3 {
+        width: 100;
+        height: 60%;
+    }
+    header li.item{
+        font-size: 1.5em;
+    }
+}
